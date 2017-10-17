@@ -118,7 +118,7 @@ variable box, you can also edit the properties of this particular variable.
 The main feature of SPOT is its ability to easily plot and explore the data
 using multiple coordinated views, cross-plot selection, and drilldown. To start
 plotting your data and exploring its facets click on  **Analyze** in the left
-menu bar. This takes you to the SPOT's plotting page. From this page you can
+menu bar. This takes you to SPOT's plotting page. From this page you can
 create, edit and interact with different plots.
 
 ![alt text](./analyze_scaled.jpg)
