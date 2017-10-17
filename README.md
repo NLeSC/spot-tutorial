@@ -24,10 +24,11 @@ yarn run gitbook
 # use a browser to navigate to _book/index.html to view the updated gitbook
 # mv the updated gitbook to the /docs/tutorial directory so that they
 # can be hosted on github.io / gh-pages
-rm -rf ../docs/tutorial/* && mv _book/* ../docs/tutorial/
+yarn run gh-pages
 
 # don't forget to git add, git commit, and git push
 
 ```
+
 
 
