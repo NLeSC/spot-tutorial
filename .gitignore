@@ -4,6 +4,10 @@
 # ignore npm packages:
 /src/node_modules
 
-# ignore generated data file
+# ignore generated data file both in src/ and under docs/
 /src/assets/simple_data.csv
+/docs/tutorial/simple_data.csv
+
+# ignore python script under docs/tutorial/
+/docs/tutorial/makedata.py
 
