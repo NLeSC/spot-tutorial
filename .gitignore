@@ -1,6 +1,6 @@
 # ignore rendered gitbook:
-/_book
+/src/_book
 
 # ignore npm packages:
-/node_modules
+/src/node_modules
 
