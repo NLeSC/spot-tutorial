@@ -149,7 +149,9 @@ quickly analysing complex datasets and easily identifying correlations between
 variables. For this simple example we will use a small comma separated value file
 (.csv) containing 3 facets. Each facet is stored in a column and contains the
 values of a random variable. We can easily create such .csv file using Python:</p>
-<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<p><pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
 
 nrows = <span class="hljs-number">10000</span>
 ncols = <span class="hljs-number">3</span>
@@ -161,7 +163,7 @@ data = np.random.normal(loc=[<span class="hljs-number">5.0</span>, <span class="
 <span class="hljs-comment"># export to a csv file</span>
 np.savetxt(<span class="hljs-string">&apos;simple_data.csv&apos;</span>, data, header=<span class="hljs-string">&apos;x, y, z&apos;</span>,
            delimiter=<span class="hljs-string">&apos;, &apos;</span>, comments=<span class="hljs-string">&apos;&apos;</span>)
-</code></pre>
+</code></pre></p>
 <p>Note that the <code>header</code> argument specifies the names of the three facets. Once
 the .csv file has been created, go to the SPOT directory and start the server by
 running the usual commands:</p>
@@ -413,7 +415,7 @@ previous SPOT session and continue the data exploration.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SPOT Tutorial","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"root":"assets/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SPOT tutorial","gitbook":"*"},"file":{"path":"README.md","mtime":"2017-10-17T08:02:01.772Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-17T08:49:17.684Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SPOT Tutorial","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["codesnippet"],"root":"assets/","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codesnippet":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SPOT tutorial","gitbook":"*"},"file":{"path":"README.md","mtime":"2017-10-17T13:05:14.377Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-10-17T13:07:00.758Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
