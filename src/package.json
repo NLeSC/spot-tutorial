@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "gitbook-cli": "^2.3.2"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "clean-gitbook": "del _book",
+    "gitbook": "del _book && gitbook build"
+  }
+}
