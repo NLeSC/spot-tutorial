@@ -1,6 +1,4 @@
-# spot-tutorial
-
-This repo contains the gitbook source files for the SPOT tutorial. 
+This repo contains the gitbook source files for the [SPOT](https://github.com/NLeSC/spot) tutorial. For the rendered gitbook, go [here](https://nlesc.github.io/spot-tutorial/tutorial/).
 
 For development, follow these steps:
 
