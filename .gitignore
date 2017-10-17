@@ -4,3 +4,6 @@
 # ignore npm packages:
 /src/node_modules
 
+# ignore generated data file
+/src/assets/simple_data.csv
+

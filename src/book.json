@@ -1,6 +1,7 @@
 {
   "root": "assets/",
-  "title": "SPOT tutorial"
+  "title": "SPOT tutorial",
+  "plugins": ["codesnippet"]
 }
 
 

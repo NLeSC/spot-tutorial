@@ -6,6 +6,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "clean-gitbook": "del _book",
-    "gitbook": "del _book && gitbook build"
+    "gitbook": "del _book && gitbook build",
+    "postinstall": "gitbook install"
   }
 }

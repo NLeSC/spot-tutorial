@@ -6,20 +6,7 @@ variables. For this simple example we will use a small comma separated value fil
 (.csv) containing 3 facets. Each facet is stored in a column and contains the
 values of a random variable. We can easily create such .csv file using Python:
 
-```python
-import numpy as np
-
-nrows = 10000
-ncols = 3
-
-# generate draws from a normal distribution; the draws in each column
-# are centered around 5.0, 10.0, and 0.0, respectively
-data = np.random.normal(loc=[5.0, 10.0, 0.0], size=(nrows, ncols))
-
-# export to a csv file
-np.savetxt('simple_data.csv', data, header='x, y, z',
-           delimiter=', ', comments='')
-```
+{% codesnippet "./makedata.py", language="python" %}{% endcodesnippet %}
 
 Note that the ``header`` argument specifies the names of the three facets. Once
 the .csv file has been created, go to the SPOT directory and start the server by
