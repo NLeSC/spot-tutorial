@@ -1,5 +1,5 @@
 # ignore rendered gitbook:
-/_book
+/tutorial/_book
 
 # ignore npm packages:
 /tutorial/node_modules
