@@ -103,7 +103,7 @@ Once the data file has been loaded in SPOT, you have the possibility to
 delete it, or edit its properties by clicking on its setting icon ![alt
 text](./wheel_small.jpg). This will open the Edit page of the data. On this page
 all the facets detected by SPOT are displayed. In our case this dataset only
-contains 3 facets called _x_,_y_ and _z_. These names correspond to the header of
+contains 3 facets called _x_, _y_ and _z_. These names correspond to the header of
 the .csv file we have created above.
 
 ![alt text](./edit_scaled.jpg)
