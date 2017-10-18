@@ -126,7 +126,7 @@ create, edit and interact with different plots.
 On the top of the page you have access to different plotting functions ranging
 from simple histograms to more advanced network charts. Below this are the
 facets that are present in the data set. You can recognise here the three
-variables _x_,_y_ and _z_ contained in our .csv file.
+variables _x_, _y_ and _z_ contained in our .csv file.
 
 
 ### Simple histogram plots
@@ -170,7 +170,7 @@ purposes:
   * **View Mode** Explore your data by selecting part of it and/or zoom in
     specific part of your dataset
 
-You can repeat the same operations for the two remaining varialbes and have
+You can repeat the same operations for the two remaining variables and have
 three histograms plotted on your SPOT session. You can freely move the windows
 to align them horizontally:
 
