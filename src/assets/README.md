@@ -1,32 +1,28 @@
 # SPOT : A Basic Tutorial with a CSV file
 
-SPOT is an interactive visualization tool for multidimensional data that allows
+SPOT is an interactive visualization tool for multi-dimensional data that allows
 quickly analysing complex datasets and easily identifying correlations between
 variables. For this simple example we will use a small comma separated value file
 (.csv) containing 3 facets. Each facet is stored in a column and contains the
 values of a random variable. We can easily create such .csv file using Python:
 
-{% codesnippet "./makedata.py", language="python" %}{% endcodesnippet %}
+{% codesnippet "./code/makedata.py", language="python" %}{% endcodesnippet %}
 
 Note that the ``header`` argument specifies the names of the three facets. Once
-the .csv file has been created, go to the SPOT directory and start the server by
-running the usual commands:
+the .csv file has been created, go to the SPOT demo page to try it out:
 
-```
-npm run templates
-npm start
-```
+http://nlesc.github.io/spot
 
-Then open your favorite web browser and go to localhost:9966 to access the home
-page of SPOT. SPOT has been tested with Chrome, Firefox and Safari but should
-also work with other browsers.
+Alternatively, you can download and build it by following the instructions here:
+
+https://github.com/NLeSC/spot/
 
 ---
 
 
 ## SPOT Homepage
 
-![alt text](./home_scaled.jpg)
+![alt text](./images/home_scaled.png)
 
 On the first login, SPOT's Help tool welcomes you. You can access the Help
 function at any time via the bottom of the left Menu bar. Orginally developed
@@ -34,6 +30,8 @@ for the [iDark project](https://www.esciencecenter.nl/project/idark), SPOT
 maintains a space-oriented appearance. Due to its origin, SPOT focuses on
 big-data exploration with the possibitly to explore and analyse the data set in
 great detail and just in a few clicks.
+
+![alt text](./images/home2.png)
 
 The traditional workflow of a SPOT session consists of three main steps:
 1. **Load the dataset**
@@ -50,18 +48,18 @@ dedicated button is associated to each step and allows you going back and forth
 along the workflow. A detailed description of each step of the workflow is
 given in the following. From the SPOT Home page you can also:
 
-- ![alt text](./demo_icon.png) ** Start the Demo Session **
+- ![alt text](./images/demo_icon.png) ** Start the Demo Session **
 
   A demo file will be fetched online and automatically uploaded on the active
   SPOT session. This way, you can have a quick look at a final session in a
   simple click!
 
-- ![alt text](./git.png) **Access the GitHub Page**
+- ![alt text](./images/git.png) **Access the GitHub Page**
 
   Go to the SPOT Github page to clone the repository and interact with our
   developers:
 
-- ![alt text](./logo_escience_center.png) **Access the NLeSC webpage**
+- ![alt text](./images/logo_escience_center.png) **Access the NLeSC webpage**
 
   Don't forget to visit the Netherlands eScience Center webpage to browse through
   the multiple projects and find opportunities for collaboration.
@@ -72,7 +70,7 @@ ___
 ## Step 1. Load your data
 
 
-![alt text](./load_scaled.jpg)
+![alt text](./images/load_scaled.jpg)
 
 
 The first step of the SPOT workflow consists of uploading your data set to the
@@ -106,10 +104,10 @@ all the facets detected by SPOT are displayed. In our case this dataset only
 contains 3 facets called _x_, _y_ and _z_. These names correspond to the header of
 the .csv file we have created above.
 
-![alt text](./edit_scaled.jpg)
+![alt text](./images/edit_scaled.jpg)
 
 You can disable/enable individual facets by clicking on the slider button next
-to its name ![alt text](./slide.jpg). By clicking on the setting icon in a given
+to its name ![alt text](./images/slide.jpg). By clicking on the setting icon in a given
 variable box, you can also edit the properties of this particular variable.
 
 
@@ -121,7 +119,7 @@ plotting your data and exploring its facets click on  **Analyze** in the left
 menu bar. This takes you to SPOT's plotting page. From this page you can
 create, edit and interact with different plots.
 
-![alt text](./analyze_scaled.jpg)
+![alt text](./images/analyze_scaled.jpg)
 
 On the top of the page you have access to different plotting functions ranging
 from simple histograms to more advanced network charts. Below this are the
@@ -134,13 +132,13 @@ variables _x_, _y_ and _z_ contained in our .csv file.
 To start with the visualization we are first going to create three histograms,
 representing the variables _x_, _y_ and _z_. To do so:
 
-  1. **Click** on the Bar Chart ![alt text](./bar-chart.svg) icon to create a
+  1. **Click** on the Bar Chart ![alt text](./images/bar-chart.svg) icon to create a
      first histogram plot.
   2. **Drag** the variable _x_ to the **Group by** entry box on the plot.
 
 
 
-![alt text](./drag_scaled.jpg)
+![alt text](./images/drag_scaled.jpg)
 
 Thanks to these two easy steps we have created a histogram of the _x_ variable.
 As you can see, other options are available for the barchart plot via different
@@ -160,7 +158,7 @@ can be controlled by specific variables. For this example we will only use the
 _x_ variable in the **Group by** entry box and leave all the other boxes empty.
 
 To finalize the visualization of this plot, and **hide the entry boxes**, click
-on the settings wheel icon ![alt text](./wheel_small.jpg) located on the top
+on the settings wheel icon ![alt text](./images/wheel_small.jpg) located on the top
 right corner of the plot. Clicking on this image allows switching between an
 edit mode and a view mode of the plot. The Edit and View modes have different
 purposes:
@@ -174,7 +172,7 @@ You can repeat the same operations for the two remaining variables and have
 three histograms plotted on your SPOT session. You can freely move the windows
 to align them horizontally:
 
-![alt text](./barchart_scaled.jpg)
+![alt text](./images/barchart_scaled.jpg)
 
 ### Customizing plots
 
@@ -187,7 +185,7 @@ example here we specify that the x axis should range between -4 and 4 and
 contains 25 bins. Click on **Analyze** in the left menu bar to return to your
 plot.
 
-![alt text](./customize_plot_scaled.jpg)
+![alt text](./images/customize_plot_scaled.jpg)
 
 
 
@@ -197,7 +195,7 @@ SPOT also allows for more advanced plotting functions such as line plots, 2D and
 3D scatter plots, network plot, etc. We are here going to create a scatter
 plot of _x_ versus _y_.
 
-  1. Click on the bubble-chart icon ![alt text](./bubble-chart.jpg)
+  1. Click on the bubble-chart icon ![alt text](./images/bubble-chart.jpg)
   2. Drag the x variable in the *X axis* box of the new plot
   3. Drag the y variable in the *Y axis* box of the new plot
 
@@ -221,7 +219,7 @@ aggregates. We can also use the values of the _z_ variables to control the size
 of the points by dragging the _z_ variable in the *Point size* box of the plot.
 
 
-![alt text](./composite_scaled.jpg)
+![alt text](./images/composite_scaled.jpg)
 
 ### Dynamic Data Selection
 
@@ -237,10 +235,10 @@ for the _y_ and _z_ variable. As you can see the 2D scatter plot is
 automatically adjusted to only represent the data points that were selected in
 the different bar charts.
 
-![alt text](./select_scaled.jpg)
+![alt text](./images/select_scaled.jpg)
 
 
-You can remove the selection by pressing the undo button ![alt text](./undo.png)
+You can remove the selection by pressing the undo button ![alt text](./images/undo.png)
 on the top left corner of the plot.
 
 ### Dive into your data
@@ -252,24 +250,24 @@ specified area of the plot. For example in the 2D scatter plot you can select
 the central region of the plot by clicking on different points of the plot. The
 selected area appears as a yellow rectangle on the plot.
 
-![alt text](./selectonscatter_scaled.jpg)
+![alt text](./images/selectonscatter_scaled.jpg)
 
 An important feature of SPOT is the possiblity to zoom in and out of your data
 to obtain a more detailed or a more general representation of the data. To
 navigate inside your dataset use the two buttons on the top left corner of the
 plot:
 
-  * ![alt text](./filter.png) *Zoom In* Ony plot the part of the dataset that is
+  * ![alt text](./images/filter.png) *Zoom In* Ony plot the part of the dataset that is
     selected and update the plot. By clicking you can dive into your data
     and progressively zoom inside your data set until each bar or point only
     represents a single data point.
 
-  * ![alt text](./undo.png) *Zoom out* Return to the previous level of detail
+  * ![alt text](./images/undo.png) *Zoom out* Return to the previous level of detail
     and update all the plots. You can progressively zoom out of your data
     until the entire dataset is represented on the plot.
 
 
-![alt text](./dropdown_scaled.jpg)
+![alt text](./images/dropdown_scaled.jpg)
 
 
 ## Step 3. Download the session
@@ -282,4 +280,4 @@ This page allows you to export the data and export the session. This session
 file can also be re-uploaded through the Upload Session button to restart a
 previous SPOT session and continue the data exploration.
 
-![alt text](./share_scaled.jpg)
+![alt text](./images/share_scaled.jpg)

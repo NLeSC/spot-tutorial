@@ -9,6 +9,6 @@ ncols = 3
 # are centered around 5.0, 10.0, and 0.0, respectively
 data = np.random.normal(loc=[5.0, 10.0, 0.0], size=(nrows, ncols))
 
-# export to a csv file
+# export to a csv file with ',' delimiter
 np.savetxt('simple_data.csv', data, header='x, y, z',
-           delimiter=', ', comments='')
+           delimiter=',', comments='')
